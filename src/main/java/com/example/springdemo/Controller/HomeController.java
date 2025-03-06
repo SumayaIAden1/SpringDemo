@@ -20,7 +20,7 @@ public class HomeController
 
     @PostMapping("/petData")
     public String petData(@ModelAttribute Pet pet, Model model) {
-        model.addAttribute("pet", pet);  // 'pet' object to display on the petData page
-        return "home/petData";  // This will display the pet information
+        model.addAttribute("pet", pet);
+        return "home/petData";
     }
 }
